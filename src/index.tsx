@@ -318,17 +318,6 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
           </div>
           <input ref={imagePicker} type="file" style={{ "display": "none" }} id={'filePicker-' + uuidFilePicker} onChange={handleFileSelect} />
         </div>
-        {sizeImage &&
-          <p
-            className="caption image-caption"
-            style={{
-              color: sizeImage > 120 ? '#f44336' : 'unset',
-              fontWeight: sizeImage > 120 ? '500' : 'unset'
-
-            }}
-          >
-            size: {sizeImage}Kb &nbsp; {state.format}
-          </p>}
 
 
         <div
