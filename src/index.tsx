@@ -286,8 +286,8 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
           }}
         >
         </div>
-        <div onClick={onUpload}>
-          <b style={{ color: '#00C6B8' }}>Add Profile Picture</b>
+        <div>
+          <b style={{ color: '#00C6B8', fontSize: '16px' }  onClick={onUpload}}>Add Profile Picture</b>
           <input ref={imagePicker} type="file" style={{ "display": "none" }} id={'filePicker-' + uuidFilePicker} onChange={handleFileSelect} />
         </div>
       </div >
@@ -312,13 +312,13 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
           />
           
         </div>
-        <div onClick={onUpload}>
-          <b style={{ color: '#00C6B8' }}>Change</b>
+        <div>
+          <b style={{ color: '#00C6B8', fontSize: '16px' }} onClick={onUpload}>Change</b>
           <input ref={imagePicker} type="file" style={{ "display": "none" }} id={'filePicker-' + uuidFilePicker} onChange={handleFileSelect} />
         </div>
 
-        <div onClick={onRemove}>
-          <b style={{ color: '#EB4C60' }}>Remove</b>
+        <div>
+          <b style={{ color: '#EB4C60', fontSize: '16px' }} onClick={onRemove}>Remove</b>
         </div>
 
         <div
