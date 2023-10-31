@@ -285,10 +285,9 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
             aspectRatio: configuration.aspectRatio + '',
           }}
         >
-          <button title={labels['Upload a image']} className="icon-btn image-upload-btn" onClick={onUpload}>
-            <span className="material-icons">add_a_photo</span>
-          </button>
-
+        </div>
+        <div onClick={onUpload}>
+          <b>Add Profile Picture</b>
           <input ref={imagePicker} type="file" style={{ "display": "none" }} id={'filePicker-' + uuidFilePicker} onChange={handleFileSelect} />
         </div>
       </div >
@@ -311,14 +310,16 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
               objectFit: configuration.objectFit
             }}
           />
-          <div className="curtain" onClick={onUpload}>
-            <button title={labels['Upload a image']} >
-              <span className="material-icons">add_a_photo</span>
-            </button>
-          </div>
+          
+        </div>
+        <div onClick={onUpload}>
+          <b>Change</b>
           <input ref={imagePicker} type="file" style={{ "display": "none" }} id={'filePicker-' + uuidFilePicker} onChange={handleFileSelect} />
         </div>
 
+        <div onClick={onRemove}>
+          <b>Remove</b>
+        </div>
 
         <div
           style={{
