@@ -46,11 +46,11 @@
 
   .place-image {
 
-    flex-direction: column;
+    flex-direction: row;
     box-sizing: border-box;
     display: flex;
-    place-content: flex-start;
-    align-items: flex-start;
+    place-content: center;
+    align-items: center;
 
 
     .image-holder {
