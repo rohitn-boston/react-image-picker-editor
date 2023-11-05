@@ -304,7 +304,7 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
               objectFit: configuration.objectFit
             }}
           />
-        <div>  
+        </div>  
         <div>
           <b style={{ color: '#00C6B8', fontSize: '16px'}}  onClick={onUpload}>Add Profile Picture</b>
           <input ref={imagePicker} type="file" style={{ "display": "none" }} id={'filePicker-' + uuidFilePicker} onChange={handleFileSelect} />
