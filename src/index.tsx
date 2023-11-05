@@ -6,6 +6,7 @@ import labelEs from './i18n/es.json';
 import labelEn from './i18n/en.json';
 import labelFr from './i18n/fr.json';
 import labelDe from './i18n/de.json';
+import imgess from './assets/profileimg.svg';
 import { convertImageUsingCanvas } from "./functions/image-processing";
 import EditImage from "./components/EditImage/EditImage";
 export * from './models/index.models';
@@ -42,7 +43,7 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
   const [imageSrc, setImageSrc] = useState<string | null>('')
   const [loadImage, setLoadImage] = useState<boolean>(false)
   const [showEditPanel, setShowEditPanel] = useState<boolean>(false);
-  const image = '/assets/profiledefault.png';
+  const image = '/assets/profileimg.svg';
   const [labels, setLabels] = useState<any>(labelEn);
   const [configuration, setConfiguration] = useState<ImagePickerConf>(initialConfig)
   const imagePicker = useRef<any>(null);
@@ -296,7 +297,7 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
           }}
         >
         <img
-            src={image}
+            src={imgess}
             alt="image-loaded"
             style={{
               borderRadius: configuration.borderRadius,
