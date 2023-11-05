@@ -279,7 +279,7 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
   return <div className="ReactImagePickerEditor">
     {!loadImage &&
       <div className="place-image">
-        {/* <div className="image-holder"
+        <div className="image-holder"
           style={{
             width: configuration.width,
             height: configuration.height,
@@ -287,8 +287,8 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
             aspectRatio: configuration.aspectRatio + '',
           }}
         >
-        </div> */}
-        <div className="image-holder-loaded"
+        </div>
+        {/* <div className="image-holder-loaded"
           style={{
             width: configuration.width,
             height: configuration.height,
@@ -304,7 +304,7 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
               objectFit: configuration.objectFit
             }}
           />
-        </div>  
+        </div>   */}
         <div>
           <b style={{ color: '#00C6B8', fontSize: '16px'}}  onClick={onUpload}>Add Profile Picture</b>
           <input ref={imagePicker} type="file" style={{ "display": "none" }} id={'filePicker-' + uuidFilePicker} onChange={handleFileSelect} />
