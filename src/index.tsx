@@ -8,6 +8,7 @@ import labelFr from './i18n/fr.json';
 import labelDe from './i18n/de.json';
 import { convertImageUsingCanvas } from "./functions/image-processing";
 import EditImage from "./components/EditImage/EditImage";
+import Image from './assets/profiledefault.png';
 export * from './models/index.models';
 
 const initialConfig: ImagePickerConf = {
@@ -295,14 +296,14 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
           }}
         >
         <img
-            src='../../assets/profiledefault.png'
+            src={Image}
             alt="image-loaded"
             style={{
               borderRadius: configuration.borderRadius,
               objectFit: configuration.objectFit
             }}
           />
-        </div>  
+        <div>  
         <div>
           <b style={{ color: '#00C6B8', fontSize: '16px'}}  onClick={onUpload}>Add Profile Picture</b>
           <input ref={imagePicker} type="file" style={{ "display": "none" }} id={'filePicker-' + uuidFilePicker} onChange={handleFileSelect} />
