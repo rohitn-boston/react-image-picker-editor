@@ -6,7 +6,7 @@ import labelEs from './i18n/es.json';
 import labelEn from './i18n/en.json';
 import labelFr from './i18n/fr.json';
 import labelDe from './i18n/de.json';
-import profileimg from './assets/profiledefault.png';
+import profileimg from './assets/profileimg.svg';
 import { convertImageUsingCanvas } from "./functions/image-processing";
 import EditImage from "./components/EditImage/EditImage";
 export * from './models/index.models';
