@@ -6,7 +6,6 @@ import labelEs from './i18n/es.json';
 import labelEn from './i18n/en.json';
 import labelFr from './i18n/fr.json';
 import labelDe from './i18n/de.json';
-import profileimg from './assets/profileimg.svg';
 import { convertImageUsingCanvas } from "./functions/image-processing";
 import EditImage from "./components/EditImage/EditImage";
 export * from './models/index.models';
@@ -286,7 +285,6 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
             aspectRatio: configuration.aspectRatio + '',
           }}
         >
-          {/* <img src={profileimg} alt='logo' /> */}
         </div>
         <div>
           <b style={{ color: '#00C6B8', fontSize: '16px'}}  onClick={onUpload}>Add Profile Picture</b>
