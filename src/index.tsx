@@ -286,7 +286,7 @@ const ReactImagePickerEditor = memo(({ config = {}, imageSrcProp = '', color = '
             aspectRatio: configuration.aspectRatio + '',
           }}
         >
-          <img src={profileimg} alt='logo' />
+          {/* <img src={profileimg} alt='logo' /> */}
         </div>
         <div>
           <b style={{ color: '#00C6B8', fontSize: '16px'}}  onClick={onUpload}>Add Profile Picture</b>
